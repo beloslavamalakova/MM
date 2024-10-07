@@ -4,6 +4,9 @@
 
 #### **Overview**
 
+Authors: Elitsa Dekova and Yana Jordanova
+Scientific advisor: Beloslava Malakova
+
 This project implements a graph analysis tool that identifies cycles (specifically C4 cycles), overlapping vertices, and detects the presence of forbidden subgraphs such as the "Sun" and "Net" in graph complements. Additionally, it seeks to identify a "murderer" vertex—one which, when removed, results in a complement graph that avoids these forbidden subgraphs.
 
 ---
