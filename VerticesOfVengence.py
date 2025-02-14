@@ -71,8 +71,11 @@ def find_overlapping_vertices(c4_cycles):
             else:
                 vertex_count[vertex] = 1
     
-    # Overlapping vertices appear in more than one subgraph
-    overlapping_vertices = {v for v, count in vertex_count.items() if count > 1}
+    # Find the maximum count of occurrences
+    max_count = max(vertex_count.values(), default=0)
+    
+    # Overlapping vertices are all vertices with the maximum count
+    overlapping_vertices = {v for v, count in vertex_count.items() if count == max_count}
     
     return overlapping_vertices
 
