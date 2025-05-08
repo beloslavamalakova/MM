@@ -1,3 +1,9 @@
+"""
+Author: Elitsa Dekova
+Date: 8th May 2025
+Description: Finding all chordless (induced) cycles of length ≥ 4 in a graph.
+Input: Adjacency matrix of an undirected graph.
+"""
 import numpy as np
 
 def constructadj(V, adj_matrix):
